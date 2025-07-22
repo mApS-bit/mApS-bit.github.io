@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/form-footer.css" />
+    <title>MarcoApS</title>
+</head>
+
+<body>
+
+<div id="navbar-container"></div>
+  <script>
+    fetch('/src/components/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+<div class="intro-title">
+   <p>
+    Hello, I'm Marco!
+   </p>
+</div>
+<div class="intro">
+   <p>
+    I'm a programmer because I love talking to machines and solving problems — that's why my background includes physics and mathematics.
+
+    Here you'll find that my favorite programming languages are Java, C, Go, and Python. Feel free to explore some of my projects, or click on the “Projects” link to learn more.  
+
+    If you're curious about who I am, you're just one more click away.
+  </p>
+  <div class="code-pics">
+    <img id="rotating-image" src="assets/images/logos/golang.png" class="img-code"/>
+  </div>
+</div>
+
+<section class="projects-section">
+  <h2>Some Projects</h2>
+  <div class="projects-grid">
+    <a href="link-a-proyecto-1" class="project-card">
+      <img src="assets/images/logos/python.png" alt="Project 1" />
+      <p>Bond Pricing App</p>
+    </a>
+    <a href="link-a-proyecto-2" class="project-card">
+      <img src="assets/images/logos/java-logo.png" alt="Project 2" />
+      <p>Card Game Eights</p>
+    </a>
+    <a href="link-a-proyecto-3" class="project-card">
+      <img src="assets/images/logos/golang.png" alt="Project 3" />
+      <p>Visual Tools in React</p>
+    </a>
+    <a href="link-a-proyecto-3" class="project-card">
+      <img src="assets/images/logos/c-logo.png" alt="Project 4" />
+      <p>Command Line Interpreter</p>
+    </a>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div>
+        <form action="/action_page.php">
+            <input type="text" id="name" name="name" placeholder="Name"><br><br>
+            <input type="email" id="email" name="email" placeholder="e-mail"><br><br>
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</section>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/marcoaps1989" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="32">
+    </a>
+    <a href="https://github.com/mApS-bit" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="32">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61577974185927&sk=about" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="32">
+    </a>
+  </div>
+</footer>
+
+<script>
+  const imageElement = document.getElementById('rotating-image');
+
+  const imagePaths = [
+    'assets/images/logos/java-logo.png',
+    'assets/images/logos/c-logo.png',
+    'assets/images/logos/python.png',
+    'assets/images/logos/golang.png'
+  ];
+
+  let currentIndex = 0;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % imagePaths.length;
+    imageElement.src = imagePaths[currentIndex];
+  }, 1000); // cambia cada 3 segundos
+</script>
+
+</body>
+</html>

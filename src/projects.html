@@ -1,0 +1,45 @@
+
+<link rel="stylesheet" href="styles/main.css"/>
+<link rel="stylesheet" href="styles/projects.css"/>
+<link rel="stylesheet" href="styles/form-footer.css" />
+
+<div id="navbar-container"></div>
+  <script>
+    fetch('/src/components/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+<body>
+  <div class="container">
+    
+    <div id="list-item">
+      <img src="/src/assets/images/logos/javaScript-logo.png" />
+      <div class="description-text">
+        <div id="description-title">Five JavaScript codes</div>
+        Here you have five simple JavaScript code, I wrote
+        these five codes to gain one of my first <a href="https://www.freecodecamp.org/certification/MathcoAPulido/javascript-algorithms-and-data-structures">freeCodeCamp</a>
+        certifications. 
+        <a href="https://github.com/mApS-bit/first-five-JavaScripts-codes" target="_blank">Here they are.</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/marcoaps1989" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="32">
+      </a>
+      <a href="https://github.com/mApS-bit" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="32">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61577974185927&sk=about" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="32">
+      </a>
+    </div>
+  </footer>
+
+</body>

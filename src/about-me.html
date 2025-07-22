@@ -1,0 +1,74 @@
+
+<link rel="stylesheet" href="styles/main.css"/>
+<link rel="stylesheet" href="styles/about-me.css"/>
+<link rel="stylesheet" href="styles/form-footer.css" />
+
+<div id="navbar-container"></div>
+  <script>
+    fetch('/src/components/navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+
+<body>
+  <div class="container">
+    <h1>This is about Me!!!</h1>
+  </div>
+
+
+<section class="about-me">
+  <div class="profile-header">
+    <img src="assets/images/me/musum.jpg" alt="Meee" class="profile-pic" />
+    <div class="intro-text">
+      <h1>Hello, I'm Marco!</h1>
+      <p>
+        I'm a developer and mathematical physicist from Mexico City with a passion for solving complex problems using both code and theory.
+        I enjoy creating clean, efficient software – especially in backend and data-driven environments – and I love learning new technologies.
+      </p>
+      <p>
+        My journey began in the world of theoretical physics, where I earned a degree in Physics and Mathematics, a Master's, and completed PhD studies. 
+        But over time, I found that building digital tools and applications let me bring abstract ideas into real-world solutions.
+      </p>
+      <p>
+        Today, I specialize in back-end development with Python and Go, data analysis, and mathematical modeling. 
+        I’ve worked on financial applications, taught advanced math and physics, and earned multiple certifications in web development and machine learning.
+      </p>
+
+      <a class="download-btn" href="https://drive.google.com/file/d/1mVPxxSK17Xhj5EEJYa9pAKK8BxNyeshd/view?usp=sharing"
+      target="_blank" download>
+        📄 Download My CV
+      </a>
+    </div>
+  </div>
+
+  <div class="tech-summary">
+    <h2>Technical Snapshot</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, JavaScript, Go, C++, R, SQL, C#, Java</li>
+      <li><strong>Frameworks/Tools:</strong> React, Node.js, Docker, Git</li>
+      <li><strong>Domains:</strong> Backend Development, Data Analysis, Machine Learning</li>
+      <li><strong>Certifications:</strong> Backend & APIs, Data Visualization, ML in Finance, React</li>
+      <li><strong>Languages spoken:</strong> Spanish (native), English (advanced), French (basic)</li>
+    </ul>
+  </div>
+
+</section>
+
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/marcoaps1989" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="32">
+    </a>
+    <a href="https://github.com/mApS-bit" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="32">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61577974185927&sk=about" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="32">
+    </a>
+  </div>
+</footer>
+
+</body>
