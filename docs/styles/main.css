@@ -1,7 +1,8 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
+/* Intro title */
 .intro-title {
   padding-top: 10rem;
   padding-left: 6rem;
@@ -9,116 +10,124 @@ body{
   line-height: 1.5;
   font-size: 1rem;
   font-family: sans-serif;
-  color:crimson
-  }
+  color: crimson;
+}
 
+.intro-title p {
+  color: crimson;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Intro content */
 .intro {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* que inicien juntos, no espacio alrededor */
-    gap: 15rem; /* espacio fijo entre elementos flex */
-    max-width: 150ch;
-    line-height: 1.5;
-    font-size: 1rem;
-    font-family: sans-serif;
-    padding-left: 5.5rem;
-    padding-right: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15rem;
+  max-width: 150ch;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 }
 
-
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    margin-left: 0;
-    text-align: justify;
+/* Paragraphs */
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin-left: 0;
+  text-align: justify;
 }
 
-.intro-title p{
-    color:crimson;
-    font-weight: bold;
-    font-size: 2rem;
-}
-header{
-    background:white;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 0.5rem 2rem;
+/* Navbar */
+header {
+  background: white;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
 }
 
-nav{
-    float: right;
-    margin-right: 5rem;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
 }
 
-nav ul{
-    list-style: none;
-    overflow: hidden;
-    margin-right: 50px;
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  margin-right: 50px;
+  display: flex;
+  gap: 1rem;
 }
 
-nav ul li{
-    float:left;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+nav ul li {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
 }
 
-nav ul li a{
-    display: block;
-    padding: 10px;
-    color:black;
-    text-decoration: none;
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
 }
 
-nav ul li a:hover{
-    background:crimson;
-    color: white;
-    border-radius: 10px;
+nav ul li a:hover {
+  background: crimson;
+  color: white;
+  border-radius: 10px;
 }
 
-.myPic{
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    margin-left: 5rem;
-    margin-top: .5rem;
-    margin-right: .5rem;
+/* Perfil */
+.myPic {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .perfil {
-    display: flex;
-    align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .myName {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: black;
-    margin-left: 0.5rem;
-    font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 0.5rem;
+  font-weight: bold;
 }
 
-.myName:hover{
-    color:crimson
+.myName:hover {
+  color: crimson;
 }
 
-.code-pics{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-bottom: 3rem;
-    height: auto;
+/* Code images */
+.code-pics {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 3rem;
+  height: auto;
 }
 
-.img-code{
-    height: 12rem;
+.img-code {
+  height: 12rem;
 }
 
+/* Projects */
 .projects-section {
   padding: 4rem 2rem;
   text-align: center;
@@ -165,6 +174,56 @@ nav ul li a:hover{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer */
 footer {
   display: block;
+}
+
+/* 🔁 RESPONSIVE SECTION */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .intro-title {
+    padding: 2rem 1rem 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  .code-pics {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .img-code {
+    height: 8rem;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-right: 0;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    float: none;
+    width: 100%;
+  }
+
+  nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+  }
+
+  .myPic {
+    margin-left: 1rem;
+  }
 }
