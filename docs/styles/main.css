@@ -46,11 +46,39 @@ header {
   background: white;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.myPic {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-left: 5rem;
+}
+
+.myName {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.myName:hover {
+  color: crimson;
 }
 
 nav {
@@ -60,10 +88,11 @@ nav {
 }
 
 nav ul {
-  list-style: none;
-  overflow: hidden;
-  margin-right: 50px;
   display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   gap: 1rem;
 }
 
@@ -77,39 +106,13 @@ nav ul li a {
   padding: 10px;
   color: black;
   text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
   background: crimson;
   color: white;
-  border-radius: 10px;
-}
-
-/* Perfil */
-.myPic {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  margin-left: 5rem;
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.perfil {
-  display: flex;
-  align-items: center;
-}
-
-.myName {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  color: black;
-  margin-left: 0.5rem;
-  font-weight: bold;
-}
-
-.myName:hover {
-  color: crimson;
 }
 
 /* Code images */
@@ -181,6 +184,36 @@ footer {
 
 /* 🔁 RESPONSIVE SECTION */
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .perfil {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    padding: 1rem;
+    width: 100%;
+  }
+
   .intro {
     flex-direction: column;
     padding: 1rem;
@@ -204,23 +237,6 @@ footer {
   .projects-grid {
     flex-direction: column;
     align-items: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    margin-right: 0;
-    align-items: flex-start;
-  }
-
-  nav ul li {
-    float: none;
-    width: 100%;
-  }
-
-  nav ul li a {
-    padding: 10px 20px;
-    display: block;
-    width: 100%;
   }
 
   .myPic {
