@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+
+.container{
+    padding-top: 6rem;
+    margin: 6rem;
+    margin-top: 2rem;
+    background: white;
+}
+
 /* Intro title */
 .intro-title {
   padding-top: 10rem;
