@@ -3,17 +3,19 @@ body {
 }
 
 
-.container-main{
-    padding-top: 2rem;
-    margin-top: 0.5rem;
+.container{
+    padding-top: 6rem;
+    margin: 6rem;
+    margin-top: 2rem;
     background: white;
 }
+
 
 /* Intro title */
 .intro-title {
   padding-top: 10rem;
   padding-left: 6rem;
-  max-width: 50ch;
+  max-width: 100ch;
   line-height: 1.5;
   font-size: 1rem;
   font-family: sans-serif;
@@ -32,7 +34,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 15rem;
-  max-width: 150ch;
+  width: 120ch;
   line-height: 1.5;
   font-size: 1rem;
   font-family: sans-serif;
@@ -48,76 +50,7 @@ p {
   text-align: justify;
 }
 
-/* Navbar */
-header {
-  background: white;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 2rem;
-  flex-wrap: wrap;
-}
 
-.perfil {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-nav ul li a {
-  display: block;
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  background: crimson;
-  color: white;
-  border-radius: 10px;
-}
-
-/* Perfil */
-.myPic {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  margin-left: 5rem;
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.myName {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  color: black;
-  margin-left: 0.5rem;
-  font-weight: bold;
-}
-
-.myName:hover {
-  color: crimson;
-}
 
 /* Code images */
 .code-pics {
@@ -139,6 +72,7 @@ nav ul li a:hover {
   padding: 4rem 2rem;
   text-align: center;
   background-color: #f9f9f9;
+  width: 75rem;
 }
 
 .projects-section h2 {
@@ -186,58 +120,3 @@ footer {
   display: block;
 }
 
-/* 🔁 RESPONSIVE SECTION */
-@media (max-width: 768px) {
-  .intro {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 2rem;
-  }
-
-  .intro-title {
-    padding: 2rem 1rem 0 1rem;
-    font-size: 1.2rem;
-  }
-
-  .code-pics {
-    padding: 1rem;
-    justify-content: center;
-  }
-
-  .img-code {
-    height: 8rem;
-  }
-
-  .projects-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li {
-    width: 100%;
-  }
-
-  nav ul li a {
-    padding: 10px 20px;
-    width: 100%;
-  }
-
-  .myPic {
-    margin-left: 1rem;
-  }
-}
