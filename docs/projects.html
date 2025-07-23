@@ -2,10 +2,11 @@
 <link rel="stylesheet" href="styles/main.css"/>
 <link rel="stylesheet" href="styles/projects.css"/>
 <link rel="stylesheet" href="styles/form-footer.css" />
+<link rel="stylesheet" href="styles/bar.css" />
 
 <div id="navbar-container"></div>
   <script>
-    fetch('./navbar.html')
+    fetch('./bar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
