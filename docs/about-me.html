@@ -2,10 +2,11 @@
 <link rel="stylesheet" href="styles/main.css"/>
 <link rel="stylesheet" href="styles/about-me.css"/>
 <link rel="stylesheet" href="styles/form-footer.css" />
+<link rel="stylesheet" href="styles/bar.css" />
 
 <div id="navbar-container"></div>
   <script>
-    fetch('./navbar.html')
+    fetch('./bar.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
@@ -13,10 +14,7 @@
   </script>
 
 <body>
-  <div class="container">
-    <h1>This is about Me!!!</h1>
-  </div>
-
+ <div class="container"></div>
 
 <section class="about-me">
   <div class="profile-header">

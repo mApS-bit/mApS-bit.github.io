@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css"/>
-    <link rel="stylesheet" href="styles/form-footer.css" />
+    <link rel="stylesheet" href="styles/form-footer.css"/>
+    <link rel="stylesheet" href="styles/bar.css" />
     <title>MarcoApS</title>
 </head>
 
 <body>
 
-<div id="navbar-container"></div>
-  <script>
-    fetch('./navbar.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-      });
-  </script>
-
+<!--<div id="navbar-container"></div> -->
+<div id="bar"></div>  
 <div class="intro-title">
    <p>
     Hello, I'm Marco!
@@ -83,6 +77,24 @@
     </a>
   </div>
 </footer>
+
+<!--
+<script>
+    fetch('./navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+</script>
+-->
+<script>
+  fetch('./bar.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('bar').innerHTML = data;
+    })
+</script>
+
 
 <script>
   const imageElement = document.getElementById('rotating-image');
