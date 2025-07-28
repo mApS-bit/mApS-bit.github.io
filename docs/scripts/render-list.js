@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projects = [
+
+    {
+      imgSrc: 'assets/images/logos/javaScript-logo.png',
+      title: 'Five OOP concepts',
+      description: `Small weekend web project: You can refresh five OOP concepts that changes with the time.`,
+      repoLink: 'https://github.com/mApS-bit/randomCart',
+      visit: 'Here you can check!!!'
+    },
     {
       imgSrc: 'assets/images/logos/javaScript-logo.png',
       title: 'Five JavaScript codes',

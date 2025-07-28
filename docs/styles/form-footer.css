@@ -33,7 +33,7 @@
       resize: vertical;
     }
 
-    input[type="submit"] {
+    form button {
       background-color: crimson;
       color: white;
       border: none;
