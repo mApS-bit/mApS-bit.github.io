@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="styles/form-footer.css"/>
     <link rel="stylesheet" href="styles/bar.css" />
     <title>MarcoApS</title>
 </head>
+
+
 <div id="bar"></div>
+
+
 <body>
-  <div class="container-main"></div>
-<!--<div id="navbar-container"></div> -->
+  <!--<div id="navbar-container"></div> -->
   
-<div class="intro-title">
-   <p>
-    Hello, I'm Marco!
-   </p>
-</div>
+    <div class="intro-title">
+      <p>
+        Hello, I'm Marco!
+      </p>
+    </div>
 <section class="intro">
    <p>
     I'm a programmer because I love talking to machines and solving problems — that's why my background includes physics and mathematics.
@@ -55,11 +58,13 @@
 
 <section class="contact-section" id="contact">
     <div>
-        <form action="/action_page.php">
-            <input type="text" id="name" name="name" placeholder="Name"><br><br>
+        <form 
+          action="https://formspree.io/f/mblkykdk"
+          method="POST"
+        >
             <input type="email" id="email" name="email" placeholder="e-mail"><br><br>
-            <textarea placeholder="Message"></textarea>
-            <input type="submit" value="Send Message">
+            <textarea name="Message"></textarea>
+            <button type="submit">send</button>
         </form>
     </div>
 </section>
